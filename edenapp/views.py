@@ -1,3 +1,4 @@
 from django.shortcuts import render
 
-# Create your views here.
+def design_list(request):
+    return render(request, 'edenapp/design_list.html', {})
