@@ -3,5 +3,13 @@
 <body>
     <p>Hi there!</p>
     <p>It works!</p>
+    {% for design in designs %}
+    <article>
+        <time>published: {{ design.updated_date }}</time>
+        <h2><a href="">{{ design.title }}</a></h2>
+        <p>{{ design.description|linebreaksbr }}</p>
+    </article>
+    <br>
+{% endfor %}
 </body>
 </html>
