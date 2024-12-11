@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.utils import timezone
-from .models import Design, User
+from .models import Design
+from django.contrib.auth.models import User
 
 from rest_framework import permissions, viewsets
 from edenapp.serializers import UserSerlializer, DesignSerializer
